@@ -29,7 +29,8 @@ def dadjoke3000():
     amount2 = amount1 - 1
     if amount1 == 0:
         return f"I'm sorry, I have no jokes about {search}"
-
+    elif search == "":
+        return "Please enter a subject!"
     else:
         response1 = (results[random.randint(0, amount2)]["joke"])
         return (f"I have {amount1} jokes about {search}. Here's one: {response1}")
